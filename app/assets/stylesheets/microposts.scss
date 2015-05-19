@@ -1,0 +1,43 @@
+// Place all the styles related to the microposts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#container{
+  @include outer-container;
+
+  #nav-links{
+      @include span-columns(12);
+
+      a{
+        border: 1px solid white;
+        text-decoration: none;
+        padding:20px 20px;
+        color:black;
+        margin-top:10px;
+        float:right;
+        width:20%;
+        text-align:center;
+        background-color:white;
+        @include transition(all,1s, ease-in-out);
+        &:hover{
+         color:white;
+         background-color:black;
+        }
+      }
+   }
+
+  #wrapper{
+    @include span-columns(12);
+
+       #tweet-box{
+         @include shift(1);
+         @include span-columns(4);
+       }
+
+       #tweets{
+         @include span-columns(6);
+       }
+
+  }
+
+}

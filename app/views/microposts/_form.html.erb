@@ -1,0 +1,6 @@
+<div id="tweet-box">
+    <%= simple_form_for @micropost, remote: true do |m| %>
+     <%= m.input :tweet %>
+     <%= m.button :submit %>
+    <% end %>
+</div>
